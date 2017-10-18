@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device name="GSL6162" dev_ver="0x61">
+
+    <SysParam> 
+	    <SLFpApi>
+		    <sysparm_on>1</sysparm_on>
+		    <frame_h>110</frame_h>
+		    <frame_w>118</frame_w>
+		    <chip_type>6162</chip_type>
+		    <fpShreshold>40</fpShreshold>
+		</SLFpApi>
+		<HardWare>
+			<sysparm_on>1</sysparm_on>
+	        <wakeup>1</wakeup>
+	        <stress>1</stress>
+	       	<spi>		        
+	       		<spiReset>1</spiReset>
+	       		<spiMode>1</spiMode>
+		        <spiPages>1</spiPages>
+		        <spiOffset>1</spiOffset>
+		        <spiSpeed>9000000</spiSpeed>
+		        <!--spiSpeed = 9MHz>9</log_lvl-->
+		        <spiResetGpio>1</spiResetGpio>
+		        <spiiotrllength>3</spiiotrllength>
+	        </spi>
+        </HardWare>
+        <SLAsm>
+			<sysparm_on>0</sysparm_on>
+        	<silead_dir>/data/silead</silead_dir>
+        	<fpinfo_dir>/data/silead/fpinfo</fpinfo_dir>
+        	<fptemplate_path>/data/silead/fpinfo/sileadinc_%d.bin</fptemplate_path>
+        	<fpinfo_path>/data/silead/fpinfo/fpinfo.bin</fpinfo_path>
+        </SLAsm>
+    </SysParam>
+   
+</device>
